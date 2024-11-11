@@ -17,10 +17,10 @@ const decodeTheRing = function (s, p) {
       } else if (p[j - 1] === '*') {
         dp[i][j] = dp[i][j - 1] || dp[i - 1][j];
       }
-    
+    }
   }
 
-
+  
   return dp[m][n];
 
   };
