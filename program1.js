@@ -12,8 +12,6 @@ const getTotalIsles = function (grid) {
     for (let col = 0; col < colCount; col++) {
       if (mapGrid[row][col] === 'L') { // Found an unvisited land cell
         islandCounter++;
-
-        // Stack for iterative DFS
         const stack = [[row, col]];
         while (stack.length > 0) {
           const [currRow, currCol] = stack.pop();
