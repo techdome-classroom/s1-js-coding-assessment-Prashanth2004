@@ -15,8 +15,6 @@ const getTotalIsles = function (grid) {
 
         // Stack for iterative DFS
         const stack = [[row, col]];
-
-        // Explore the entire island
         while (stack.length > 0) {
           const [currRow, currCol] = stack.pop();
           if (
