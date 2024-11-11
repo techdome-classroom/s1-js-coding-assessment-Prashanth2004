@@ -21,13 +21,11 @@ const getTotalIsles = function (grid) {
       grid[row][col] = 'W';
   
       // Recursively visit all neighboring land cells (up, down, left, right)
-      dfs(row + 1, col); // down
-      dfs(row - 1, col); // up
-      dfs(row, col + 1); // right
-      dfs(row, col - 1); // left
+      dfs(row + 1, col);
+      dfs(row - 1, col);
+      dfs(row, col + 1);
+      dfs(row, col - 1); 
     };
-  
-    // Main loop to go through the grid
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < cols; col++) {
         if (grid[row][col] === 'L') { 
