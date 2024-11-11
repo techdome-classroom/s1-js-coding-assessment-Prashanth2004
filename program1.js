@@ -35,8 +35,7 @@ const getTotalIsles = function (grid) {
           dfs(row, col); // visit all land cells in this island
         }
       }
-    }
-  
+    } 
     return islandCount;
 };
 
