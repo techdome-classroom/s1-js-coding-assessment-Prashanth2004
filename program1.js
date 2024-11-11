@@ -19,8 +19,6 @@ const getTotalIsles = function (grid) {
         // Explore the entire island
         while (stack.length > 0) {
           const [currRow, currCol] = stack.pop();
-
-          // Check boundaries and skip if the cell is water
           if (
             currRow < 0 || currRow >= rowCount ||
             currCol < 0 || currCol >= colCount ||
