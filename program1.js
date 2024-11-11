@@ -19,8 +19,6 @@ const getTotalIsles = function (grid) {
       
       // Mark the cell as visited by setting it to 'W'
       grid[row][col] = 'W';
-  
-      // Recursively visit all neighboring land cells (up, down, left, right)
       dfs(row + 1, col);
       dfs(row - 1, col);
       dfs(row, col + 1);
