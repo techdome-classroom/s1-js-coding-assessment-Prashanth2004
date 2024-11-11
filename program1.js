@@ -9,10 +9,7 @@ const getTotalIsles = function (grid) {
     const rows = grid.length;
     const cols = grid[0].length;
     let islandCount = 0;
-  
-    // Helper function to perform DFS
     const dfs = (row, col) => {
-      // Check boundaries and if the cell is water or already visited
       if (row < 0 || row >= rows || col < 0 || col >= cols || grid[row][col] === 'W') {
         return;
       }
