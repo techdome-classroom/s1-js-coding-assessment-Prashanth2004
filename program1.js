@@ -16,8 +16,6 @@ const getTotalIsles = function (grid) {
       if (row < 0 || row >= rows || col < 0 || col >= cols || grid[row][col] === 'W') {
         return;
       }
-      
-      // Mark the cell as visited by setting it to 'W'
       grid[row][col] = 'W';
       dfs(row + 1, col);
       dfs(row - 1, col);
