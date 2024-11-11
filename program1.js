@@ -28,13 +28,11 @@ const getTotalIsles = function (grid) {
           ) {
             continue;
           }
-
-          // Mark the cell as visited by setting it to 'W'
           mapGrid[currRow][currCol] = 'W';
-          stack.push([currRow + 1, currCol]); // down
-          stack.push([currRow - 1, currCol]); // up
-          stack.push([currRow, currCol + 1]); // right
-          stack.push([currRow, currCol - 1]); // left
+          stack.push([currRow + 1, currCol]); 
+          stack.push([currRow - 1, currCol]); 
+          stack.push([currRow, currCol + 1]); 
+          stack.push([currRow, currCol - 1]); 
         }
       }
     }
