@@ -31,8 +31,6 @@ const getTotalIsles = function (grid) {
 
           // Mark the cell as visited by setting it to 'W'
           mapGrid[currRow][currCol] = 'W';
-
-          // Push adjacent cells to the stack for further exploration
           stack.push([currRow + 1, currCol]); // down
           stack.push([currRow - 1, currCol]); // up
           stack.push([currRow, currCol + 1]); // right
