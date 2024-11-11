@@ -6,11 +6,9 @@ const getTotalIsles = function (grid) {
   const rowCount = mapGrid.length;
   const colCount = mapGrid[0].length;
   let islandCounter = 0;
-
-  // Iterate over each cell in the grid
   for (let row = 0; row < rowCount; row++) {
     for (let col = 0; col < colCount; col++) {
-      if (mapGrid[row][col] === 'L') { // Found an unvisited land cell
+      if (mapGrid[row][col] === 'L') { 
         islandCounter++;
         const stack = [[row, col]];
         while (stack.length > 0) {
