@@ -30,7 +30,7 @@ const getTotalIsles = function (grid) {
     // Main loop to go through the grid
     for (let row = 0; row < rows; row++) {
       for (let col = 0; col < cols; col++) {
-        if (grid[row][col] === 'L') { // found an unvisited land cell
+        if (grid[row][col] === 'L') { 
           islandCount++;
           dfs(row, col);
         }
